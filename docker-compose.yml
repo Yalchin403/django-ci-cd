@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  web:
+    container_name: "web"
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    command: bash -c "gunicorn dj_ci_cd.wsgi:application --bind 0.0.0.0:8000"
