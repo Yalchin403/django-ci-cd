@@ -1,0 +1,1 @@
+# Simplest Django application to set up ci/cd pipeline
