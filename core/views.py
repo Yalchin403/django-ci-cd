@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def hello(request):
 	if request.method == "GET":
-		return HttpResponse("Hello, there!")
+		return HttpResponse("Hello, there!, This changes are deployed automatically!")
