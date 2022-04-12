@@ -10,6 +10,3 @@ class TestUrl(SimpleTestCase):
 	def test_main_url(self):
 		url = reverse("core:hello")
 		self.assertEqual(resolve(url).func, hello)
-
-	def test_fail_deliberate(self):
-		assert 2 + 2 == 5
